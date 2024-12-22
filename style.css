@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff007f, #1c1c13);
+    color: white;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Left Section */
+  .left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .left-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px #ff69b4;
+  }
+  
+  .left-section p {
+    font-size: 1.5rem;
+    color: #ffd700;
+    animation: fadeIn 2s;
+  }
+  
+  /* Right Section */
+  .right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Slideshow Container */
+  .slideshow-container {
+    position: relative;
+    width: 300px; /* Slightly narrower */
+    height: 450px; /* Taller for vertical images */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #ff69b4;
+    background-color: #000; /* Fallback for loading images */
+  }
+  
+  .slides {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the full image fits inside */
+    background: black; /* Adds a nice border effect for non-full images */
+  }
+  
+  /* Navigation Arrows */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    color: #ffd700;
+    font-size: 1.5rem;
+    user-select: none;
+  }
+  
+  .prev {
+    left: -40px;
+  }
+  
+  .next {
+    right: -40px;
+  }
+  
+  /* Dots */
+  .dots-container {
+    margin-top: 20px;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active, .dot:hover {
+    background-color: #ff69b4;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .fade {
+    animation: fadeIn 1.5s;
+  }
+  

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Kanna!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Audio -->
+  <audio id="background-audio" autoplay loop>
+    <source src="audio/audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <!-- Left Section -->
+    <div class="left-section">
+      <h1>Happy Birthday, Kanna!! 🎉</h1>
+      <p id="image-context">You make the world brighter just by being in it. 💖</p>
+    </div>
+
+
+    <!-- Right Section: Slideshow -->
+    <div class="right-section">
+      <div class="slideshow-container">
+        <!-- Slides -->
+        <div class="slides fade">
+          <img src="images/image1.jpg" alt="Slide 1">
+        </div>
+        <div class="slides fade">
+          <img src="images/image2.jpg" alt="Slide 2">
+        </div>
+        <div class="slides fade">
+          <img src="images/image3.jpg" alt="Slide 3">
+        </div>
+        <div class="slides fade">
+            <img src="images/image4.jpg" alt="Slide 4">
+        </div>
+        <div class="slides fade">
+            <img src="images/image5.jpg" alt="Slide 5">
+        </div>
+        <div class="slides fade">
+            <img src="images/image6.jpg" alt="Slide 6">
+        </div>
+        <div class="slides fade">
+            <img src="images/image7.jpg" alt="Slide 7">
+        </div>
+
+        <!-- Navigation Arrows -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <!-- Dots -->
+      <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="audio-controls">
+    <button onclick="toggleAudio()">🔈 Toggle Music</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
